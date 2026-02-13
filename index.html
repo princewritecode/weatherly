@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly - Your Weather Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+                    <circle cx="12" cy="12" r="5" />
+                </svg>
+                <h1>Weatherly</h1>
+            </div>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="m21 21-4.35-4.35" />
+                </svg>
+                <input type="text" id="cityInput" placeholder="Search for a city..." class="search-input">
+                <button id="searchBtn" class="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="weather-container" id="weatherContainer">
+            <div class="current-weather">
+                <div class="location">
+                    <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <h2 id="cityName">Select a City</h2>
+                </div>
+
+                <div class="weather-main">
+                    <div class="temperature-section">
+                        <div class="temp-display">
+                            <span id="temperature" class="temperature">--</span>
+                            <span class="temp-unit">°C</span>
+                        </div>
+                        <div class="weather-description">
+                            <p id="weatherDesc" class="description">--</p>
+                            <p id="feelsLike" class="feels-like">Feels like --°C</p>
+                        </div>
+                    </div>
+
+                    <div class="weather-icon-section">
+                        <div id="weatherIcon" class="weather-icon">🌤️</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-card">
+                    <div class="detail-icon">💧</div>
+                    <div class="detail-info">
+                        <p class="detail-label">Humidity</p>
+                        <p id="humidity" class="detail-value">--%</p>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="detail-icon">💨</div>
+                    <div class="detail-info">
+                        <p class="detail-label">Wind Speed</p>
+                        <p id="windSpeed" class="detail-value">-- km/h</p>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="detail-icon">🌡️</div>
+                    <div class="detail-info">
+                        <p class="detail-label">Pressure</p>
+                        <p id="pressure" class="detail-value">-- hPa</p>
+                    </div>
+                </div>
+
+                <div class="detail-card">
+                    <div class="detail-icon">👁️</div>
+                    <div class="detail-info">
+                        <p class="detail-label">Visibility</p>
+                        <p id="visibility" class="detail-value">-- km</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Made with ❤️ by You | Weather data powered by API</p>
+        </footer>
+    </div>
+
+    <script src="./weatherproject.js"></script>
+</body>
+
+</html>
