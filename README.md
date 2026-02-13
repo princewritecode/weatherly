@@ -213,7 +213,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 If you like this project, please ⭐ star this repository and share it with others!
 
-For support, email your-email@example.com or open an issue on GitHub.
+For support, email princepateldevs@gmail.com or open an issue on GitHub.
 
 ---
 
