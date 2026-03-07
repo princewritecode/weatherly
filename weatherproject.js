@@ -86,5 +86,6 @@ function displayWeather(data)
     pressure.textContent = `${data.main.pressure} hPa`;
     visibility.textContent = `${(data.visibility / 1000).toFixed(1)} km`;
 }
-
 console.log('project completed');
+console.log('this sbhould be in different branch let do it brother');
+
